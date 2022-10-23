@@ -1,0 +1,60 @@
+<?php 
+include("login.php");
+?>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <link rel="stylesheet" href="logincss.css">
+  <title>Giriş Sayfası</title>
+</head>
+<body>
+  <form action="" method="POST">
+    <div class="login-wrap">
+  <div class="login-html">
+    <br><br>
+    <input id="tab-1" type="radio" name="tab" class="admingiris" checked><label for="tab-1" class="tab">Admin Giriş</label>
+    <input id="tab-2" type="radio" name="tab" class="personelgiris"><label for="tab-2" class="tab">Personel Giriş</label>
+    <div class="login-form">
+      <div class="admingiris-htm">
+        <div class="group">
+          <br><br><br><br><br><br>
+          <label for="nickname" class="label">Kullanıcı Adı</label>
+          <input id="nickname" name="nickname" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="password" class="label">Şifre</label>
+          <input id="password" name="password" type="password" class="input" data-type="password">
+        </div>
+        <div class="group">
+          <input id="check" type="checkbox" class="check" checked>
+        </div>
+        <div class="group">
+          <br><br>
+          <input type="submit" class="button" value="Giriş">
+        </div>
+        
+        <div class="hr"></div>
+      </div>
+      <div class="personelgiris-htm">
+        <div class="group">
+          <br><br><br><br><br><br>
+          <label for="user" class="label">Tc Kimlik No</label>
+          <input id="user" name="tcno" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="pass" class="label">Şifre</label>
+          <input id="pass" name="tcpass" type="password" class="input" data-type="password">
+        </div>
+        <div class="group">
+          <br><br>
+          <input type="submit" class="button" value="Giriş">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Personel Kayıt Formu</title>
+</head>
+<body>
+    <div class="container">
+        <form action="http://localhost/index/maas_oto/personelekle.php" method="POST">
+          <br>
+            <h2 class="text-center">Personel Kayıt Formu</h2>
+            <div class="row jumbotron">
+          <div class="col-sm-6 form-group">
+                <label for="tc">Tc Kimlik No</label>
+                <input type="text" class="form-control" name="tc" id="kimlik" placeholder="Tc Kimlik No Giriniz." required>
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="ad">Ad</label>
+                <input type="text" class="form-control" name="ad" id="name-f" placeholder="Ad Giriniz." required>
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="soyad">Soyad</label>
+                <input type="text" class="form-control" name="soyad" id="name-l" placeholder="Soyad Giriniz." required>
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="dogumtarihi">Doğum Tarihi</label>
+                <input type="Date" name="dogumtarihi" class="form-control" id="dogumtarihi" placeholder="" required>
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="dogumyeri">Doğum Yeri</label>
+                <select name="dogumyeri" class="form-control custom-select browser-default">
+                    <option selected="dogumyeri">Doğum Yerini Seçiniz.</option>
+                    <option value="1">İstanbul</option>
+                    <option value="2">Ankara</option>
+                    <option value="3">İzmir</option>
+                    <option value="4">Trabzon</option>
+                </select>
+            </div>
+
+            <div class="col-sm-6 form-group">
+                <label for="cinsiyet">Cinsiyet</label>
+                <select id="cinsiyet" name="cinsiyet" class="form-control browser-default custom-select">
+                <option selected="cinsiyet">Cinsiyet Seçiniz.</option>
+                <option value="1">Erkek</option>
+                <option value="2">Kadın</option>
+            </select>
+            </div>
+
+             <div class="col-sm-6 form-group">
+                <label for="medenihal">Medeni Hal</label>
+                <select id="medenihal" name="medenihal" class="form-control browser-default custom-select">
+                <option selected="medenihal">Medeni Hal Seçiniz.</option>
+                <option value="1">Bekar</option>
+                <option value="2">Evli</option>
+                <option value="3">Dul</option>
+            </select>
+            </div>
+
+            <div class="col-sm-6 form-group">
+                <label for="unvan">Ünvan</label>
+                <select id="unvan" name="unvan" class="form-control browser-default custom-select">
+                  <option selected="unvan">Ünvan Seçiniz.</option>
+                <option value="1">Profesör</option>
+                <option value="2">Doçent</option>
+                <option value="3">Yardımcı Doçent</option>
+                <option value="4">Öğretim Görevlisi</option>
+                <option value="5">Okutman</option>
+                <option value="6">Araştırma Görevlisi</option>
+                <option value="7">Uzman</option>
+                <option value="8">Çevirici</option>
+                <option value="9">Eğitim Öğretim Planlamacısı</option>
+            </select>
+            </div>
+
+            <div class="col-sm-6 form-group">
+                <label for="derece">Derece</label>
+                <select id="derece" name="derece" class="form-control browser-default custom-select">
+                <option selected="derece">Derece Seçiniz.</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            </div>
+
+            <div class="col-sm-6 form-group">
+                <label for="kademe">Kademe</label>
+                <select id="kademe" name="kademe" class="form-control browser-default custom-select">
+                <option selected="kademe">Kademe Seçiniz.</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            </div>
+
+              <div class="col-sm-6 form-group">
+                <label for="fakulte">Fakülte</label>
+                <select id="fakulte" name="fakulte" class="form-control browser-default custom-select">
+                <option selected="fakulte">Fakülte Seçiniz.</option>
+                <option value="1">Tıp Fakültesi</option>
+                <option value="2">Hukuk Fakültesi</option>
+                <option value="3">Edebiyat Fakültesi</option>
+                <option value="4">İktisat Fakültesi</option>
+                <option value="5">Eczacılık Fakültesi</option>
+                <option value="6">İşletme Fakültesi</option>
+                <option value="7">İletişim Fakültesi</option>
+                <option value="8">Mimarlık Fakültesi</option>
+                <option value="9">Mühendislik Fakültesi</option>
+                <option value="10">Sağlık Bilimleri Fakültesi</option>
+            </select>
+            </div>
+
+            <div class="col-sm-6 form-group">
+                <label for="departman">Departman</label>
+                <select id="departman" name="departman" class="form-control browser-default custom-select">
+                <option selected="departman">Departman Seçiniz.</option>
+                <option value="1">Bilgisayar Mühendisliği</option>
+                <option value="2">Yazılım Mühendisliği</option>
+                <option value="3">Makine Mühendisliği</option>
+                <option value="4">Mimarlık</option>
+                <option value="5">İç Mimarlık</option>
+                <option value="6">Fizyoterapi ve Rehebilitasyon</option>
+                <option value="7">İngiliz Dili ve Edebiyatı</option>
+                <option value="8">Türk Dili ve Edebiyatı</option>
+                <option value="9">Eczacılık</option>
+                <option value="10">İktisat</option>
+                <option value="11">İşletme</option>
+                <option value="12">Sinema ve Televizyon</option>
+                <option value="13">Halkla İlişkiler</option>
+                <option value="14">Yeni Medya</option>
+                <option value="15">Doktorluk</option>
+            </select>
+            </div>
+
+            <div class="col-sm-6 form-group">
+                <label for="dil">Dil</label>
+                <select id="dil" name="dil" class="form-control browser-default custom-select">
+                <option selected="dil">Dil Seçiniz.</option>
+                <option value="1">Türkçe</option>
+                <option value="2">İngilizce</option>
+                <option value="3">Fransızca</option>
+                <option value="4">Almanca</option>
+                <option value="5">Arapça</option>
+                <option value="6">Rusça</option>
+                <option value="7">Çince</option>
+                <option value="8">Japonca</option>
+                <option value="9">Farsça</option>
+            </select>
+            </div>
+              <div class="col-sm-6 form-group">
+                <label for="maas">Maaş</label>
+                <input type="number" class="form-control" name="maas" id="maas" placeholder="Maaşı Giriniz." required>
+            </div>
+            <div class="col-sm-12 form-group mb-0">
+               <button class="btn btn-primary float-right">Kaydet</button>
+            </div>
+        </div>
+        </form>
+    </div>
+</body>
+</html>

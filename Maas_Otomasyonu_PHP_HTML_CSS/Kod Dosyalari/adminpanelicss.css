@@ -1,0 +1,64 @@
+body{
+  margin:0;
+  color:#6a6f8c;
+  background:#c8c8c8;
+  font:600 16px/18px 'Open Sans',sans-serif;
+}
+
+
+.pembe a
+    {
+      
+      background:#EB4E7E;
+    }
+    .mavi a
+    {
+      background:#53BFE2;
+    }
+    .sari a
+    {
+      background:#FED051;
+    }
+    .mor a
+    {
+      background:#DF6DC2;
+    }
+    .yesil a
+    {
+      background:#33CC00;
+    }
+    .menu
+    {
+      list-style:none;
+      margin-left:550px;
+      margin-top: 240px; 
+      padding-left: 75px;
+    }
+    
+    .menu li
+    {
+      
+      margin:5px;
+    }
+    .menu a 
+    {
+      font-size:20px;
+      text-decoration:none;  
+       font-weight:bolder;
+      padding:5px; 
+      line-height:25px;
+      text-align:center;
+      padding:5px;
+      color:white;
+      border:1px solid black;
+      width:240px;
+      display:block;
+    }
+    
+    .menu a:hover
+    {
+      border-top:3px dashed #EB4E7E;
+      border-right:3px dashed #53BFE2 ;
+      border-left:3px dashed #FED051;
+      border-bottom:3px dashed #DF6DC2;
+    }
